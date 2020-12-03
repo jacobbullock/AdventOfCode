@@ -9,8 +9,6 @@ import Foundation
 
 class Day04: Day {
     
-    let input = [""]
-    
     override func part1() -> String {
         return "need to implement"
     }

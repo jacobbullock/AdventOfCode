@@ -15,12 +15,12 @@ class Day {
         CFAbsoluteTimeGetCurrent() - start
     }
     
-    var inp: Input!
+    var input: Input!
     
     init() {
         let base = URL(fileURLWithPath: "\(#file)").deletingLastPathComponent().deletingLastPathComponent()
         let file = base.appendingPathComponent("2020/Day\(name)/input.txt").path
-        inp = Input(file: file)
+        input = Input(file: file)
     }
 
     func part1() -> String {

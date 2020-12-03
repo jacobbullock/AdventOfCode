@@ -12,7 +12,7 @@ class Day02: Day {
 
     override func part1() -> String {
         var result = 0
-        for line in inp.lines {
+        for line in input.lines {
             let parts = line.components(separatedBy: " ")
             let range = parts[0].components(separatedBy: "-")
             let min = Int(range[0])!
@@ -32,7 +32,7 @@ class Day02: Day {
 
     override func part2() -> String {
         var result = 0
-        for line in inp.lines {
+        for line in input.lines {
             let parts = line.components(separatedBy: " ")
             let range = parts[0].components(separatedBy: "-")
             let min = Int(range[0])!

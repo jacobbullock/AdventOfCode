@@ -35,7 +35,7 @@ class Day03: Day {
     }
     
     func helper(right: Int, down: Int) -> Int {
-        let lines = inp.lines
+        let lines = input.lines
         var hits = 0
         var x = right
         for i in stride(from: down, to: lines.count - 1, by: down) {
