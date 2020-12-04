@@ -7,15 +7,6 @@
 
 import Foundation
 
-//
-//  Day02.swift
-//  AdventOfCode
-//
-//  Created by Jacob Bullock on 12/2/20.
-//
-
-import Foundation
-
 class Day03: Day {
     override var name: String { "03" }
 
