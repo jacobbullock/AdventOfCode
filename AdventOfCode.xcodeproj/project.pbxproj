@@ -17,6 +17,7 @@
 		16A78E11257899D3009AE4E5 /* Day03.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A78E10257899D3009AE4E5 /* Day03.swift */; };
 		16A78E1625794A79009AE4E5 /* Day04.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A78E1525794A79009AE4E5 /* Day04.swift */; };
 		16A78E1A25796F14009AE4E5 /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A78E1925796F14009AE4E5 /* Input.swift */; };
+		16A78E63257B5202009AE4E5 /* Day05.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A78E62257B5202009AE4E5 /* Day05.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,7 @@
 		16A78E10257899D3009AE4E5 /* Day03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day03.swift; sourceTree = "<group>"; };
 		16A78E1525794A79009AE4E5 /* Day04.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day04.swift; sourceTree = "<group>"; };
 		16A78E1925796F14009AE4E5 /* Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input.swift; sourceTree = "<group>"; };
+		16A78E62257B5202009AE4E5 /* Day05.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day05.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				16A78E04257807EB009AE4E5 /* Day02 */,
 				16A78E0F257899C2009AE4E5 /* Day03 */,
 				16A78E1425794A6D009AE4E5 /* Day04 */,
+				16A78E61257B51DA009AE4E5 /* Day05 */,
 				167CBCA12577063100E3D47B /* AOC2020.swift */,
 			);
 			path = 2020;
@@ -135,6 +138,14 @@
 				16A78E1525794A79009AE4E5 /* Day04.swift */,
 			);
 			path = Day04;
+			sourceTree = "<group>";
+		};
+		16A78E61257B51DA009AE4E5 /* Day05 */ = {
+			isa = PBXGroup;
+			children = (
+				16A78E62257B5202009AE4E5 /* Day05.swift */,
+			);
+			path = Day05;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +211,7 @@
 				167CBC97257705B400E3D47B /* Year.swift in Sources */,
 				167CBCA22577063100E3D47B /* AOC2020.swift in Sources */,
 				167CBCA62577068D00E3D47B /* util.swift in Sources */,
+				16A78E63257B5202009AE4E5 /* Day05.swift in Sources */,
 				167CBC8F257705A600E3D47B /* main.swift in Sources */,
 				167CBC9A257705E600E3D47B /* Day.swift in Sources */,
 				16A78E11257899D3009AE4E5 /* Day03.swift in Sources */,

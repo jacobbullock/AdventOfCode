@@ -36,6 +36,11 @@ extension StringProtocol {
     subscript(offset: Int) -> Character {
         self[index(startIndex, offsetBy: offset)]
     }
+    
+    subscript(range: ClosedRange<Int>) -> Character {
+        let start = index(startIndex, offsetBy: range.lowerBound)
+        return self[index(start, offsetBy: range.upperBound - range.lowerBound)]
+    }
 }
 
 extension Bool {
