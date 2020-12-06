@@ -18,6 +18,7 @@
 		16A78E1625794A79009AE4E5 /* Day04.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A78E1525794A79009AE4E5 /* Day04.swift */; };
 		16A78E1A25796F14009AE4E5 /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A78E1925796F14009AE4E5 /* Input.swift */; };
 		16A78E63257B5202009AE4E5 /* Day05.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A78E62257B5202009AE4E5 /* Day05.swift */; };
+		16A78E68257C9CD9009AE4E5 /* Day06.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A78E67257C9CD9009AE4E5 /* Day06.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +46,7 @@
 		16A78E1525794A79009AE4E5 /* Day04.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day04.swift; sourceTree = "<group>"; };
 		16A78E1925796F14009AE4E5 /* Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input.swift; sourceTree = "<group>"; };
 		16A78E62257B5202009AE4E5 /* Day05.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day05.swift; sourceTree = "<group>"; };
+		16A78E67257C9CD9009AE4E5 /* Day06.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day06.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 		167CBC9C2577060800E3D47B /* 2020 */ = {
 			isa = PBXGroup;
 			children = (
+				16A78E66257C9CC4009AE4E5 /* Day06 */,
 				167CBCAD25770C4900E3D47B /* Day01 */,
 				16A78E04257807EB009AE4E5 /* Day02 */,
 				16A78E0F257899C2009AE4E5 /* Day03 */,
@@ -146,6 +149,14 @@
 				16A78E62257B5202009AE4E5 /* Day05.swift */,
 			);
 			path = Day05;
+			sourceTree = "<group>";
+		};
+		16A78E66257C9CC4009AE4E5 /* Day06 */ = {
+			isa = PBXGroup;
+			children = (
+				16A78E67257C9CD9009AE4E5 /* Day06.swift */,
+			);
+			path = Day06;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +218,7 @@
 			files = (
 				16A78E1A25796F14009AE4E5 /* Input.swift in Sources */,
 				167CBC9E2577061500E3D47B /* Day01.swift in Sources */,
+				16A78E68257C9CD9009AE4E5 /* Day06.swift in Sources */,
 				16A78E06257807F4009AE4E5 /* Day02.swift in Sources */,
 				167CBC97257705B400E3D47B /* Year.swift in Sources */,
 				167CBCA22577063100E3D47B /* AOC2020.swift in Sources */,
