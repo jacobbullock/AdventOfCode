@@ -65,23 +65,23 @@ class Day07: Day {
         }
         return "\(result.count)"
     }
+
+    override func part2() -> String {
+        let result = countBags("shiny gold")
+        return "\(result)"
+    }
     
     func countBags(_ color: String) -> Int {
-        var total = 0
         guard let bag = rules[color] else {
             return 0
         }
+        
+        var total = 0
         
         for (col, count) in bag {
             total += count * (countBags(col) + 1)
         }
         
-        
         return total
-    }
-
-    override func part2() -> String {
-        let result = countBags("shiny gold")
-        return "\(result)"
     }
 }
