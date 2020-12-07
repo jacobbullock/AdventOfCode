@@ -19,7 +19,7 @@ class Day {
     
     init() {
         let base = URL(fileURLWithPath: "\(#file)").deletingLastPathComponent().deletingLastPathComponent().deletingLastPathComponent()
-        let file = base.appendingPathComponent("AOC2020/Day\(name)/input.txt").path
+        let file = base.appendingPathComponent("AOC2019/Day\(name)/input.txt").path
         input = Input(file: file)
     }
 

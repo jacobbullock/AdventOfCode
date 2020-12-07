@@ -31,6 +31,7 @@
 		16A78EE6257DE820009AE4E5 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167CBC99257705E600E3D47B /* Day.swift */; };
 		16A78EE7257DE820009AE4E5 /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A78E1925796F14009AE4E5 /* Input.swift */; };
 		16A78EEB257DE823009AE4E5 /* util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167CBCA52577068D00E3D47B /* util.swift */; };
+		16A78EF1257EB087009AE4E5 /* Day02.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A78EF0257EB087009AE4E5 /* Day02.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -83,6 +84,7 @@
 		16A78ECC257DE589009AE4E5 /* AOC2019 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AOC2019; sourceTree = BUILT_PRODUCTS_DIR; };
 		16A78ECE257DE589009AE4E5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		16A78EDD257DE79A009AE4E5 /* Day01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day01.swift; sourceTree = "<group>"; };
+		16A78EF0257EB087009AE4E5 /* Day02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day02.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				16A78EDC257DE78E009AE4E5 /* Day01 */,
+				16A78EEF257EB072009AE4E5 /* Day02 */,
 				16A78ECE257DE589009AE4E5 /* main.swift */,
 			);
 			path = AOC2019;
@@ -245,6 +248,14 @@
 				16A78EDD257DE79A009AE4E5 /* Day01.swift */,
 			);
 			path = Day01;
+			sourceTree = "<group>";
+		};
+		16A78EEF257EB072009AE4E5 /* Day02 */ = {
+			isa = PBXGroup;
+			children = (
+				16A78EF0257EB087009AE4E5 /* Day02.swift */,
+			);
+			path = Day02;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,6 +390,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16A78EE7257DE820009AE4E5 /* Input.swift in Sources */,
+				16A78EF1257EB087009AE4E5 /* Day02.swift in Sources */,
 				16A78ECF257DE589009AE4E5 /* main.swift in Sources */,
 				16A78EE5257DE820009AE4E5 /* Year.swift in Sources */,
 				16A78EEB257DE823009AE4E5 /* util.swift in Sources */,
