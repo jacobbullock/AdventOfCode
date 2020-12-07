@@ -10,9 +10,15 @@ import Foundation
 struct Year {
     static var elapsedTime: CFTimeInterval = 0
     
-    var name: String = "2020"
-    var days = [Day01(), Day02(), Day03(), Day04(), Day05()]
+    var name: String { "\(year)" }
+    var year: Int
+    var days: [Day]
 
+    init(_ year: Int, _ days: [Day] = []) {
+        self.year = year
+        self.days = days
+    }
+    
     func run() {
         print("running year: \(name)")
         for day in days {
