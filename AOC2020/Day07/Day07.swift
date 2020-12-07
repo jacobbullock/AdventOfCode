@@ -11,22 +11,22 @@ class Day07: Day {
     override var name: String { "07" }
     
     lazy var rules: [String: [String: Int]] = {
-        var r = [String: [String: Int]]()
+        var node = [String: [String: Int]]()
         for line in input.lines {
             let comps = line.components(separatedBy: " contain ")
-            var r2 = [String: Int]()
+            var children = [String: Int]()
             
-            let c = comps[1].components(separatedBy: ", ")
-            for i in c {
-                var j = i.components(separatedBy: " ")
-                var count = Int(j.removeFirst())
-                var key = String(j.joined(separator: " "))
-                r2[sanitize(key)] = count
+            let bags = comps[1].components(separatedBy: ", ")
+            for bag in bags {
+                var info = bag.components(separatedBy: " ")
+                var count = Int(info.removeFirst())
+                var key = String(info.joined(separator: " "))
+                children[sanitize(key)] = count
             }
-            r[sanitize(comps[0])] = r2
+            node[sanitize(comps[0])] = children
         }
         
-        return r
+        return node
     }()
     
     func sanitize(_ str: String) -> String {
