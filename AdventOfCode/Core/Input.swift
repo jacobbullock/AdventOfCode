@@ -13,6 +13,7 @@ class Input {
     public lazy var lines: Array<String> = { raw.components(separatedBy: .newlines) }()
     public lazy var integers: Array<Int> = { lines.map { Int($0)! } }()
     public lazy var intArray: Array<Int> = { raw.components(separatedBy: ",").map { Int($0)! } }()
+    public lazy var strArray: Array<String> = { raw.components(separatedBy: ",") }()
     
     public convenience init(file: String) {
         self.init(try! String(contentsOfFile: file))
