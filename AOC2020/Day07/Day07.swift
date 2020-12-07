@@ -46,7 +46,7 @@ class Day07: Day {
             var tier: [String] = []
             for term in search {
                 
-                tier = tier + rules.filter {
+                tier += rules.filter {
                     $0.value.keys.joined(separator: "--").contains(term)
                 }.map { $0.key }
             }
