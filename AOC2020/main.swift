@@ -7,8 +7,10 @@
 
 import Foundation
 
+Day.year = "2020"
+
 //let days = [Day01(), Day02(), Day03(),Day04(), Day05(),
-//            Day06(), Day07()]
+//            Day06(), Day07(), Day08(), Day09(), Day10(), Day11(), Day12()]
 //Year(2020, days).run()
 
 //Day01().run()
@@ -17,13 +19,13 @@ import Foundation
 //Day04().run()
 //Day05().run()
 //Day06().run()
-Day07().run()
+//Day07().run()
 //Day08().run()
 //Day09().run()
 //Day10().run()
 //Day11().run()
 //Day12().run()
-//Day13().run()
+Day13().run()
 //Day14().run()
 //Day15().run()
 //Day16().run()

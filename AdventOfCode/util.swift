@@ -49,3 +49,24 @@ extension Bool {
     }
 }
 
+struct Point: Hashable {
+    var x: Int
+    var y: Int
+    
+    static var zero: Point {
+        return Point(x: 0, y: 0)
+    }
+    
+    var manhattanDistance: Int {
+        abs(x) + abs(y)
+    }
+    
+    static func * (left: Point, right: Int) -> Point {
+        return Point(x: left.x * right, y: left.y * right)
+    }
+    
+    static func + (left: Point, right: Point) -> Point {
+        return Point(x: left.x + right.x, y: left.y + right.y)
+    }
+}
+

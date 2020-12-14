@@ -8,6 +8,7 @@
 import Foundation
 
 class Day {
+    static var year: String = ""
     var name: String { "" }
     
     var start: CFTimeInterval!
@@ -19,7 +20,7 @@ class Day {
     
     init() {
         let base = URL(fileURLWithPath: "\(#file)").deletingLastPathComponent().deletingLastPathComponent().deletingLastPathComponent()
-        let file = base.appendingPathComponent("AOC2019/Day\(name)/input.txt").path
+        let file = base.appendingPathComponent("AOC\(Day.year)/Day\(name)/input.txt").path
         input = Input(file: file)
     }
 
