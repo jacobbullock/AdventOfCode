@@ -1,16 +1,15 @@
 //
 //  main.swift
-//  AdventOfCode
+//  AOC2021
 //
-//  Created by Jacob Bullock on 12/1/20.
+//  Created by Jacob Bullock on 11/30/21.
 //
 
 import Foundation
 
-//Year().run()
+Day.year = "2021"
 
-
-//Day01().run()
+Day01().run()
 //Day02().run()
 //Day03().run()
 //Day04().run()
@@ -34,3 +33,5 @@ import Foundation
 //Day22().run()
 //Day23().run()
 //Day24().run()
+
+
