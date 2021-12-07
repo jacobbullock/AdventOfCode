@@ -1,25 +1,24 @@
 class Day07: Day {
     override var name: String { "07" }
 
-    override func part1() -> String {
-        var totals: [Int: Int] = [:]
-        var least: Int?
-        for start in input.intArray {
-            guard totals[start] == nil else { continue }
 
-            var total = 0
-
-            for pos in input.intArray {
-                total += abs(pos - start)
-            }
-
-            if least == nil || total < totals[least!]! {
-                least = start
-            }
-
-            totals[start] = total
+    func median(of array: [Int]) -> Float {
+        let sorted = array.sorted()
+        if sorted.count % 2 == 0 {
+            return Float((sorted[(sorted.count / 2)] + sorted[(sorted.count / 2) - 1])) / 2
+        } else {
+            return Float(sorted[(sorted.count - 1) / 2])
         }
-        return "\(totals[least!]!)"
+    }
+
+    override func part1() -> String {
+        let median = Int(median(of: input.intArray))
+
+        let total = input.intArray.reduce(0) {
+            $0 + abs(median - $1)
+        }
+
+        return "\(total)"
     }
 
     func sum(of steps: Int) -> Int {
@@ -27,26 +26,12 @@ class Day07: Day {
     }
 
     override func part2() -> String {
-        var totals: [Int: Int] = [:]
-        var least: Int?
+        let average = input.intArray.reduce(0, +) / input.intArray.count
 
-        let a = input.intArray.sorted()
-        let positions = a.first!...a.last!
-        for start in positions {
-            guard totals[start] == nil else { continue }
-
-            var total = 0
-
-            for pos in input.intArray {
-                total += sum(of: abs(pos - start))
-            }
-
-            if least == nil || total < totals[least!]! {
-                least = start
-            }
-
-            totals[start] = total
+        let total = input.intArray.reduce(0) {
+            $0 + sum(of: abs(average - $1))
         }
-        return "\(totals[least!]!)"
+
+        return "\(total)"
     }
 }
