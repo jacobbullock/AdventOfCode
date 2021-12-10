@@ -139,12 +139,8 @@ class Day04: Day {
             }
         }
 
-        print(winner!)
         let values = winner!.map{$0.value}
-        print(values)
         let sum = values.reduce(0, +)
-        print(sum)
-        print(lastNum)
         let answer = sum * lastNum
 
         return "\(answer)"
@@ -159,7 +155,7 @@ class Day04: Day {
             lastNum = num
             for board in boards {
                 board.select(num: num)
-                if let winningBoard = board.winner {
+                if board.winner != nil {
                     lastWinningBoard = board
                     if boards.count > 1 {
                         boards.removeAll { $0 == lastWinningBoard }
@@ -171,12 +167,8 @@ class Day04: Day {
             }
         }
 
-        print(winner!)
         let values = winner!.map{$0.value}
-        print(values)
         let sum = values.reduce(0, +)
-        print(sum)
-        print(lastNum)
         let answer = sum * lastNum
 
         return "\(answer)"

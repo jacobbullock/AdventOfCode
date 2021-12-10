@@ -41,7 +41,7 @@ class Day10: Day {
 
             }
         }
-        print(errors)
+        //print(errors)
         let total = errors.reduce(0) {
             $0 + points[$1]!
         }

@@ -15,12 +15,12 @@ class Day06: Day {
             }
         }
 
-        let keys = dict.keys.sorted(by: <)
+        //let keys = dict.keys.sorted(by: <)
         //print(keys.map { "\($0): \(dict[$0]!)"})
 
-        for i in 0..<80 {
+        for _ in 0..<80 { //i
             dict = shiftDict(dict: dict)
-            let keys = dict.keys.sorted(by: <)
+            //let keys = dict.keys.sorted(by: <)
             //print(keys.map { "\($0): \(dict[$0]!)"})
 
             var sum = 0
@@ -70,12 +70,12 @@ class Day06: Day {
             }
         }
 
-        let keys = dict.keys.sorted(by: <)
+        //let keys = dict.keys.sorted(by: <)
         //print(keys.map { "\($0): \(dict[$0]!)"})
 
-        for i in 0..<256 {
+        for _ in 0..<256 {//i
             dict = shiftDict(dict: dict)
-            let keys = dict.keys.sorted(by: <)
+            //let keys = dict.keys.sorted(by: <)
             //print(keys.map { "\($0): \(dict[$0]!)"})
 
             var sum = 0

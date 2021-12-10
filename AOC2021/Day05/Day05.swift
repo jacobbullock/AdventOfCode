@@ -51,7 +51,7 @@ class Day05: Day {
         }
 
         var count = 0
-        for (key, value) in hash {
+        for (_, value) in hash {
 
             if value > 1 {
                 count += 1
@@ -108,7 +108,7 @@ class Day05: Day {
                 let minx = coord[0].x
                 let miny = coord[0].y
 
-                print(diff, minx, miny, xi, yi)
+               // print(diff, minx, miny, xi, yi)
 
                 for i in 0...diff {
                     let key = "\(minx + (xi * i)),\(miny + (yi * i))"
@@ -122,7 +122,7 @@ class Day05: Day {
         }
 
         var count = 0
-        for (key, value) in hash {
+        for (_, value) in hash {
 
             if value > 1 {
                 count += 1
