@@ -70,3 +70,17 @@ struct Point: Hashable {
     }
 }
 
+extension Sequence where Element: AdditiveArithmetic {
+    var sum: Element { reduce(.zero, +) }
+}
+
+extension Sequence where Element: Numeric & Comparable {
+    var product: Element { reduce(.zero, *) }
+    
+    func min(count: Int = 1) -> Element {
+        Array(self.sorted(by: <).prefix(count)).sum
+    }
+    func max(count: Int = 1) -> Element {
+        Array(self.sorted(by: >).prefix(count)).sum
+    }
+}
