@@ -19,4 +19,3 @@ class Day01: Day {
         return "\(todaysInput.max(count: 3))"
     }
 }
-

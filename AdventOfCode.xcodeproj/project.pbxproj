@@ -1155,7 +1155,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1410;
-				LastUpgradeCheck = 1300;
+				LastUpgradeCheck = 1410;
 				TargetAttributes = {
 					16594AB727569F2C00ED92B9 = {
 						CreatedOnToolsVersion = 13.0;
@@ -1350,6 +1350,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = QSQ77F4UQP;
 				ENABLE_HARDENED_RUNTIME = YES;
 				MACOSX_DEPLOYMENT_TARGET = 11.3;
@@ -1364,6 +1365,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = QSQ77F4UQP;
 				ENABLE_HARDENED_RUNTIME = YES;
 				MACOSX_DEPLOYMENT_TARGET = 11.3;
@@ -1376,7 +1378,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = QSQ77F4UQP;
 				ENABLE_HARDENED_RUNTIME = YES;
 				MACOSX_DEPLOYMENT_TARGET = 12.4;
@@ -1389,7 +1393,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = QSQ77F4UQP;
 				ENABLE_HARDENED_RUNTIME = YES;
 				MACOSX_DEPLOYMENT_TARGET = 12.4;
@@ -1432,6 +1438,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -1493,6 +1500,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1518,6 +1526,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -1528,6 +1537,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -1538,6 +1548,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -1548,6 +1559,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -1558,6 +1570,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -1568,6 +1581,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -1578,6 +1592,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -1588,6 +1603,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
