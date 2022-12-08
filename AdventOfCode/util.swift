@@ -75,12 +75,31 @@ extension Sequence where Element: AdditiveArithmetic {
 }
 
 extension Sequence where Element: Numeric & Comparable {
-    var product: Element { reduce(.zero, *) }
+    var product: Element { reduce(1, *) }
     
     func min(count: Int = 1) -> Element {
         Array(self.sorted(by: <).prefix(count)).sum
     }
     func max(count: Int = 1) -> Element {
         Array(self.sorted(by: >).prefix(count)).sum
+    }
+}
+
+extension Array {
+    func split() -> [[Element]] {
+        let half = count / 2
+        let leftSplit = self[0 ..< half]
+        let rightSplit = self[half ..< count]
+        return [Array(leftSplit), Array(rightSplit)]
+    }
+}
+
+extension ClosedRange<Int> {
+    func contains(_ range: ClosedRange<Int>) -> Bool {
+        contains(range.lowerBound) && contains(range.upperBound)
+    }
+    
+    func overlaps(_ range: ClosedRange<Int>) -> Bool {
+        contains(range.lowerBound) || contains(range.upperBound)
     }
 }

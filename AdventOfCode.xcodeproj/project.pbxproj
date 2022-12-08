@@ -1093,6 +1093,8 @@
 			dependencies = (
 			);
 			name = AdventOfCode;
+			packageProductDependencies = (
+			);
 			productName = AdventOfCode;
 			productReference = 167CBC8B257705A600E3D47B /* AdventOfCode */;
 			productType = "com.apple.product-type.tool";
@@ -1186,6 +1188,8 @@
 				Base,
 			);
 			mainGroup = 167CBC82257705A600E3D47B;
+			packageReferences = (
+			);
 			productRefGroup = 167CBC8C257705A600E3D47B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
