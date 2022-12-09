@@ -19,7 +19,7 @@ class Day09: Day {
     
     func run(knots: [Point]) -> Int {
         var knots = knots
-        var grid: [Point: Int] = [Point(x: 0, y: 0): 1]
+        var grid: [Point: Int] = [knots.first!: 1]
        
         for command in todaysInput {
             let n = Int(command[1])!
