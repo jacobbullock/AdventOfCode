@@ -103,3 +103,9 @@ extension ClosedRange<Int> {
         contains(range.lowerBound) || contains(range.upperBound)
     }
 }
+
+extension Point {
+    static func +=(lhs: Self, rhs: Self) -> Point {
+        Point(x: lhs.x + rhs.x, y: lhs.y + rhs.y)
+    }
+}
