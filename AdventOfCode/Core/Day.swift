@@ -45,4 +45,14 @@ class Day {
         print("\t ", runtime)
         Year.elapsedTime += runtime
     }
+    
+    func runWithoutLogging() {
+        start = CFAbsoluteTimeGetCurrent()
+        _ = part1()
+        Year.elapsedTime += runtime
+
+        start = CFAbsoluteTimeGetCurrent()
+        _ = part2()
+        Year.elapsedTime += runtime
+    }
 }

@@ -19,7 +19,17 @@ struct Year {
         self.days = days
     }
     
+    func runWithoutLogging() {
+        Year.elapsedTime = 0
+        print("running year: \(name)")
+        for day in days {
+            day.runWithoutLogging()
+        }
+        print("total time: \(Year.elapsedTime)")
+    }
+    
     func run() {
+        Year.elapsedTime = 0
         print("running year: \(name)")
         for day in days {
             day.run()

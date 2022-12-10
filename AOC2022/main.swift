@@ -1,9 +1,12 @@
 import Foundation
 
 Day.year = "2022"
-//let days = [Day01(), Day02(), Day03(),Day04(), Day05(),
-//            Day06(), Day07()]
-//Year(2022, days).run()
+var days: [Day] {
+    [Day01(), Day02(), Day03(),Day04(), Day05(),
+     Day06(), Day07(), Day08(), Day09(), Day10()]
+}
+// Year(2022, days).run()
+Year(2022, days).runWithoutLogging()
 
 //Day01().run()
 //Day02().run()
@@ -13,8 +16,8 @@ Day.year = "2022"
 //Day06().run()
 //Day07().run()
 //Day08().run()
-Day09().run()
-//Day10().run()
+//Day09().run()
+Day10().run()
 //Day11().run()
 //Day12().run()
 //Day13().run()
