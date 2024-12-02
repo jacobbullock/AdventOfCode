@@ -16,7 +16,7 @@ class Input {
     public lazy var strArray: Array<String> = { raw.components(separatedBy: ",") }()
     
     public convenience init(file: String) {
-        self.init(try! String(contentsOfFile: file))
+        self.init(try! String(contentsOfFile: file, encoding: .utf8))
     }
     
     public init(_ raw: String) {
