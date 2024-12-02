@@ -94,6 +94,26 @@ extension Array {
     }
 }
 
+extension Array where Element: Numeric & Comparable {
+    func isIncreasing() -> Bool {
+        for i in 1 ..< count {
+            if self[i] < self[i - 1] {
+                return false
+            }
+        }
+        return true
+    }
+    
+    func isDecreasing() -> Bool {
+        for i in 1 ..< count {
+            if self[i] > self[i - 1] {
+                return false
+            }
+        }
+        return true
+    }
+}
+
 extension ClosedRange<Int> {
     func contains(_ range: ClosedRange<Int>) -> Bool {
         contains(range.lowerBound) && contains(range.upperBound)
