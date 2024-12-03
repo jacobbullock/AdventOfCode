@@ -5,9 +5,9 @@ Day.year = "2024"
 //            Day06(), Day07(), Day08(), Day09()]
 //Year(2022, days).run()
 
-Day01().run()
-Day02().run()
-//Day03().run()
+//Day01().run()
+//Day02().run()
+Day03().run()
 //Day04().run()
 //Day05().run()
 //Day06().run()
