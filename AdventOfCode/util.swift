@@ -61,12 +61,55 @@ struct Point: Hashable {
         abs(x) + abs(y)
     }
     
+    func surroundingPoints() -> [Point] {
+        return [
+            Point(x: x - 1, y: y), //left
+            Point(x: x + 1, y: y), //right
+            Point(x: x, y: y - 1), //top
+            Point(x: x, y: y + 1), //bottom
+            Point(x: x - 1, y: y - 1), //left / down
+            Point(x: x - 1, y: y + 1), //left / up
+            Point(x: x + 1, y: y + 1), //right / up
+            Point(x: x + 1, y: y - 1), //right / down
+        ].filter {
+            $0.x >= 0 && $0.y >= 0
+        }
+        
+    }
+    
+    func cornerPoints() -> [Point] {
+        return [
+            Point(x: x-1, y: y-1),  //left / down
+            Point(x: x+1, y: y+1),  //right / up
+            Point(x: x-1, y: y+1),  //left / up
+            Point(x: x+1, y: y-1), //right /down
+        ]
+    }
+    
+    func surroundingIndicies() -> [Point] {
+        return [
+            Point(x: -1, y: 0), //left
+            Point(x: 1, y: 0), //right
+            Point(x: 0, y: -1), //top
+            Point(x: 0, y: 1), //bottom
+            Point(x: -1, y: -1), //left / down
+            Point(x: -1, y: 1), //left / up
+            Point(x: 1, y: 1), //right / up
+            Point(x: 1, y: -1), //right / down
+        ]
+    }
+    
+    
     static func * (left: Point, right: Int) -> Point {
         return Point(x: left.x * right, y: left.y * right)
     }
     
     static func + (left: Point, right: Point) -> Point {
         return Point(x: left.x + right.x, y: left.y + right.y)
+    }
+    
+    func isInGrid<T>(_ grid: Grid<T>) -> Bool {
+        (x >= 0 && y >= 0) && (x < grid.width && y < grid.height)
     }
 }
 
@@ -127,5 +170,30 @@ extension ClosedRange<Int> {
 extension Point {
     static func +=(lhs: Self, rhs: Self) -> Point {
         Point(x: lhs.x + rhs.x, y: lhs.y + rhs.y)
+    }
+}
+
+
+struct Grid<T> {
+    let source: [[T]]
+    
+    var width: Int { source[0].count }
+    var height: Int { source.count }
+    
+    init(from string: String) {
+        let source = string.components(separatedBy: .newlines).map {
+            Array($0).map {
+                String($0) as! T
+            }
+        }
+        self.source = source
+    }
+    
+    func traverse(action: (Int, Int) -> Void) {
+        for y in 0..<width {
+            for x in 0..<height {
+                action(x, y)
+            }
+        }
     }
 }
