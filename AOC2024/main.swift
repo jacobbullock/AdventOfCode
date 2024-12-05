@@ -1,15 +1,14 @@
 import Foundation
 
 Day.year = "2024"
-//let days = [Day01(), Day02(), Day03(),Day04(), Day05(),
-//            Day06(), Day07(), Day08(), Day09()]
-//Year(2022, days).run()
+//let days = [Day01(), Day02(), Day03(),Day04()]
+//Year(2024, days).run()
 
 //Day01().run()
 //Day02().run()
 //Day03().run()
-Day04().run()
-//Day05().run()
+//Day04().run()
+Day05().run()
 //Day06().run()
 //Day07().run()
 //Day08().run()
