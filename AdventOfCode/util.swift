@@ -49,6 +49,19 @@ extension Bool {
     }
 }
 
+extension Point {
+    enum Direction {
+        case up
+        case down
+        case right
+        case left
+        case upLeft
+        case upRight
+        case downLeft
+        case downRight
+    }
+}
+
 struct Point: Hashable {
     var x: Int
     var y: Int
@@ -59,6 +72,19 @@ struct Point: Hashable {
     
     var manhattanDistance: Int {
         abs(x) + abs(y)
+    }
+    
+    func offset(by direction: Direction) -> Point {
+        switch direction {
+        case .up: return Point(x: x, y: y - 1)
+        case .down: return Point(x: x, y: y + 1)
+        case .right: return Point(x: x + 1, y: y)
+        case .left: return Point(x: x - 1, y: y)
+        case .upLeft: return Point(x: x - 1, y: y - 1)
+        case .upRight: return Point(x: x + 1, y: y - 1)
+        case .downLeft: return Point(x: x - 1, y: y + 1)
+        case .downRight: return Point(x: x + 1, y: y + 1)
+        }
     }
     
     func surroundingPoints() -> [Point] {
@@ -175,7 +201,7 @@ extension Point {
 
 
 struct Grid<T> {
-    let source: [[T]]
+    var source: [[T]]
     
     var width: Int { source[0].count }
     var height: Int { source.count }
@@ -195,5 +221,13 @@ struct Grid<T> {
                 action(x, y)
             }
         }
+    }
+    
+    func item(at point: Point) -> T {
+        return source[point.y][point.x]
+    }
+    
+    mutating func set(_ value: T, at point: Point) {
+        source[point.y][point.x] = value
     }
 }
